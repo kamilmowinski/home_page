@@ -1,0 +1,25 @@
+{
+  "name": "home_page",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kamilmowinski/home_page",
+  "authors": [
+    "Kamil Mówiński <kamil.mowinski@pwr.edu.pl>"
+  ],
+  "description": "Home page",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "angularjs#~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}
