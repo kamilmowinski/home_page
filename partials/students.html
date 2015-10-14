@@ -1,0 +1,27 @@
+<h3>SCR - Systemy operacyjne</h3>
+<h4>Zaliczenie</h4>
+<ol>
+  <li>Warunkiem zaliczenia jest obecność i odpowiednio wysokie wyniki rezultatów pracy.</li>
+  <li>Dopuszczalne są dwie nieobecności. Kolejne muszą już być odpowiednio usprawiedliwiane (np. zwolnienie lekarskie).</li>
+  <li>Dopuszczalne jest nieoddanie jednego zadania. Nieoddanie programu jest równoznaczne z otrzymaniem mniej niż 20% maksymalnej ilości punktów za dany zadania.</li>
+  <li>Ocena jest wyliczana na podstawie procentowej ilości punktów, tj:</li>
+  <ul>
+      <li> > 97% - ocena celująca 5.5,</li>
+      <li> > 90% - ocena bardzo dobra 5.0,</li>
+      <li> > 80% - ocena dobra + 4.5,</li>
+      <li> > 70% - ocena dobra 4.0,</li>
+      <li> > 60% - ocena dostateczna + 3.5,</li>
+      <li> > 50% - ocena dostateczna 3.0,</li>
+      <li> &le; 50% - ocena niedostateczna 2.0.</li>
+  </ul>
+  <li>Dopuszczam wiele podejść do jednego zadania. W takiej sytuacji w miarę możliwości będę je sprawdzał i w razie pomyłek zostawiał swoje komentarze. Umożliwia to Państwu uzyskiwanie lepszych wyników.</li>
+  <li>Termin jest zawsze ostateczny. Nie dopuszczam oddawania zadań poza terminem.</li>
+  <li>Wszelkie problemy proszę omawiać ze mną na bieżąco, nie zostawiać niczego na ostatnią chwilę.</li>
+  <li>Konsultację zostaną zorganizowane indywidualnie, po uprzednim napisaniu na maila.</li>
+</ol>
+
+<h4>Terminy oddawania programów<h4>
+<dl>
+  <dt ng-repeat-start="task in tasks|orderBy:sortTasks">{{task.name}}</dt>
+  <dd ng-repeat-end>{{task.end}}</dd>
+</dl>

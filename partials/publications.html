@@ -1,0 +1,8 @@
+<ul>
+  <li ng-repeat="pub in publications|orderBy:'-date_start'">
+    <h6>{{pub.title}}</h6>
+    <span class="small">{{pub.date_start}}</span>
+    <span class="small" ng-if="pub.date_end">- {{pub.date_end}}</span>
+    <a href="{{pub.link}}" target="_blank" class="small">Link</a>
+  </li>
+</ul>

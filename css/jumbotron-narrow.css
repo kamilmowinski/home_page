@@ -77,3 +77,5 @@ body {
     border-bottom: 0;
   }
 }
+
+.reverse { unicode-bidi:bidi-override; direction:rtl; }

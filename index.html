@@ -31,16 +31,17 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#/page/home">Strona główna</a></li>
-            <li role="presentation"><a href="#/page/about">O mnie</a></li>
-            <li role="presentation"><a href="#/page/contact">Kontakt</a></li>
+            <li role="presentation" ng-class="{active: $route.current.activeTab == 'home'}"><a href="#/">Strona główna</a></li>
+            <li role="presentation" ng-class="{active: $route.current.activeTab == 'about'}"><a href="#/about">O mnie</a></li>
+            <li role="presentation" ng-class="{active: $route.current.activeTab == 'publications'}"><a href="#/publications">Projekty</a></li>
+            <li role="presentation" ng-class="{active: $route.current.activeTab == 'students'}"><a href="#/students">Studenci</a></li>
+            <li role="presentation" ng-class="{active: $route.current.activeTab == 'contact'}"><a href="#/contact">Kontakt</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Kamil Mówiński</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>{{page.title}}</h1>
         <div ng-view></div>
       </div>
 
@@ -48,14 +49,14 @@
         <div class="col-lg-6">
           <h4>Aktualności</h4>
           <div ng-repeat="msg in news">
-            <p>{{msg}}</p>
+            <div><h5>{{msg.title}}</h5><span ng-bind-html="msg.content"></span></div>
           </div>
         </div>
 
         <div class="col-lg-6">
           <h4>Informacje</h4>
           <div ng-repeat="info in informations">
-            <p>{{info}}</p>
+            <div><h5>{{info.title}}</h5><span ng-bind-html="info.content"></span></div>
           </div>
         </div>
       </div>
@@ -68,5 +69,6 @@
   </body>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="js/site.js"></script>
 </html>
